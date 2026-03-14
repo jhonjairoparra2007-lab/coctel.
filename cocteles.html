@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cocteles Cali | Bar Urbano</title>
+  <link rel="stylesheet" href="cocteles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-glass">
+        <div class="loader-liquid"></div>
+        <div class="loader-stem"></div>
+        <div class="loader-base"></div>
+      </div>
+      <p class="loader-text">COCTELES CALI</p>
+    </div>
+  </div>
+
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">🍹</span>
+      <span class="logo-text">COCTELES<span class="logo-accent">CALI</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#reservas">Reservas</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+    </ul>
+    <a href="#reservas" class="nav-cta">Reservar Mesa</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#inicio" onclick="closeMobile()">Inicio</a>
+    <a href="#menu" onclick="closeMobile()">Menú</a>
+    <a href="#galeria" onclick="closeMobile()">Galería</a>
+    <a href="#reservas" onclick="closeMobile()">Reservas</a>
+    <a href="#nosotros" onclick="closeMobile()">Nosotros</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-noise"></div>
+    <div class="hero-lines"></div>
+
+    <!-- Floating bubbles -->
+    <div class="bubbles" id="bubbles"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="dot-cyan"></span>
+        Abierto esta noche · Cali, Colombia
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">DONDE</span>
+        <span class="title-line accent-cyan">LA NOCHE</span>
+        <span class="title-line">SABE BIEN</span>
+      </h1>
+      <p class="hero-sub">Cocteles artesanales con ingredientes locales. El mejor bar urbano de Cali, con ambiente, música y sabor únicos.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">Ver Menú <i class="fas fa-arrow-right"></i></a>
+        <a href="#reservas" class="btn-outline">Reservar Mesa</a>
+      </div>
+      <div class="hero-hours">
+        <div class="hour-item">
+          <span class="hour-day">Lun – Jue</span>
+          <span class="hour-time">5:00 PM – 1:00 AM</span>
+        </div>
+        <div class="hour-sep"></div>
+        <div class="hour-item">
+          <span class="hour-day">Vie – Sáb</span>
+          <span class="hour-time">5:00 PM – 3:00 AM</span>
+        </div>
+        <div class="hour-sep"></div>
+        <div class="hour-item">
+          <span class="hour-day">Domingo</span>
+          <span class="hour-time">4:00 PM – 12:00 AM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-glass-wrap">
+        <svg class="hero-cocktail-svg" viewBox="0 0 320 480" xmlns="http://www.w3.org/2000/svg">
+          <!-- Glow bg -->
+          <ellipse cx="160" cy="300" rx="140" ry="100" fill="#00f5d4" opacity="0.04"/>
+          <ellipse cx="160" cy="200" rx="100" ry="120" fill="#f72585" opacity="0.04"/>
+          <!-- Glass body -->
+          <path d="M60 60 L260 60 L190 300 L130 300 Z" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+          <!-- Liquid fill -->
+          <path d="M85 130 L235 130 L190 300 L130 300 Z" fill="url(#liquidGrad)" opacity="0.85"/>
+          <!-- Liquid surface shimmer -->
+          <path d="M85 130 Q160 118 235 130" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+          <!-- Ice cubes -->
+          <rect x="120" y="200" width="28" height="28" rx="4" fill="rgba(200,240,255,0.25)" stroke="rgba(200,240,255,0.5)" stroke-width="1" transform="rotate(15,134,214)"/>
+          <rect x="160" y="220" width="22" height="22" rx="3" fill="rgba(200,240,255,0.2)" stroke="rgba(200,240,255,0.4)" stroke-width="1" transform="rotate(-10,171,231)"/>
+          <rect x="148" y="170" width="18" height="18" rx="3" fill="rgba(200,240,255,0.18)" stroke="rgba(200,240,255,0.35)" stroke-width="1" transform="rotate(8,157,179)"/>
+          <!-- Bubbles in drink -->
+          <circle cx="110" cy="250" r="3" fill="rgba(255,255,255,0.3)"/>
+          <circle cx="170" cy="230" r="4" fill="rgba(255,255,255,0.25)"/>
+          <circle cx="145" cy="270" r="2.5" fill="rgba(255,255,255,0.2)"/>
+          <circle cx="185" cy="260" r="3.5" fill="rgba(255,255,255,0.2)"/>
+          <!-- Stem -->
+          <rect x="152" y="300" width="16" height="100" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <!-- Base -->
+          <rect x="100" y="395" width="120" height="12" rx="6" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <!-- Garnish straw -->
+          <line x1="200" y1="55" x2="230" y2="130" stroke="#00f5d4" stroke-width="3" stroke-linecap="round"/>
+          <!-- Garnish lime -->
+          <ellipse cx="240" cy="62" rx="22" ry="14" fill="#7fd400" opacity="0.85" transform="rotate(-30,240,62)"/>
+          <ellipse cx="240" cy="62" rx="14" ry="8" fill="none" stroke="#5aa000" stroke-width="1" opacity="0.7" transform="rotate(-30,240,62)"/>
+          <!-- Rim sugar effect -->
+          <path d="M60 60 L260 60" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" stroke-dasharray="4,3"/>
+          <!-- Glow under glass -->
+          <ellipse cx="160" cy="410" rx="90" ry="20" fill="#00f5d4" opacity="0.07"/>
+          <defs>
+            <linearGradient id="liquidGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f72585" stop-opacity="0.7"/>
+              <stop offset="50%" stop-color="#7209b7" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#00f5d4" stop-opacity="0.7"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <!-- Orbiting dots -->
+        <div class="orbit-ring">
+          <div class="orbit-dot d1"></div>
+          <div class="orbit-dot d2"></div>
+          <div class="orbit-dot d3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item"><span class="sn">50+</span><span class="sl">Cocteles</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-item"><span class="sn">8</span><span class="sl">Años en Cali</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-item"><span class="sn">4.9★</span><span class="sl">Rating</span></div>
+    <div class="stat-div"></div>
+    <div class="stat-item"><span class="sn">2</span><span class="sl">Sedes</span></div>
+  </div>
+
+  <!-- MENÚ -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="sec-tag">Carta de Cocteles</span>
+        <h2>NUESTRO <span class="cyan">MENÚ</span></h2>
+        <p>Cada trago es una historia. Creados con técnica, pasión y los mejores ingredientes.</p>
+      </div>
+
+      <!-- Category filters -->
+      <div class="menu-filters" id="menuFilters"></div>
+
+      <!-- Menu grid -->
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section gallery-section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="sec-tag">Galería</span>
+        <h2>NUESTRO <span class="magenta">ESPACIO</span></h2>
+        <p>Un ambiente diseñado para que cada visita sea inolvidable.</p>
+      </div>
+    </div>
+    <div class="carousel-wrap">
+      <div class="carousel-track" id="carouselTrack"></div>
+      <button class="car-btn car-prev" id="carPrev"><i class="fas fa-chevron-left"></i></button>
+      <button class="car-btn car-next" id="carNext"><i class="fas fa-chevron-right"></i></button>
+      <div class="car-dots" id="carDots"></div>
+      <div class="car-caption" id="carCaption"></div>
+    </div>
+    <div class="container">
+      <div class="car-thumbs" id="carThumbs"></div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="section dark-sec" id="reservas">
+    <div class="container">
+      <div class="section-header">
+        <span class="sec-tag">Reservaciones</span>
+        <h2>RESERVA TU <span class="cyan">MESA</span></h2>
+        <p>Garantiza tu lugar y disfruta la noche sin preocupaciones.</p>
+      </div>
+      <div class="booking-wrap">
+        <div class="booking-left">
+          <!-- Step indicators -->
+          <div class="steps-bar">
+            <div class="step-item active" id="si1"><span>1</span> Fecha</div>
+            <div class="step-arrow">→</div>
+            <div class="step-item" id="si2"><span>2</span> Mesa</div>
+            <div class="step-arrow">→</div>
+            <div class="step-item" id="si3"><span>3</span> Datos</div>
+          </div>
+
+          <!-- Step 1: Date & time -->
+          <div class="book-step active" id="bstep1">
+            <h3>Elige fecha y hora</h3>
+            <div class="field-group">
+              <label>Fecha</label>
+              <input type="date" id="resDate" class="field-input" />
+            </div>
+            <div class="field-group">
+              <label>Hora de llegada</label>
+              <div class="time-slots" id="timeSlots">
+                <p class="hint-text">Selecciona una fecha primero</p>
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Número de personas</label>
+              <div class="pax-picker">
+                <button class="pax-btn" onclick="changePax(-1)">−</button>
+                <span id="paxCount">2</span>
+                <button class="pax-btn" onclick="changePax(1)">+</button>
+                <span class="pax-label">personas</span>
+              </div>
+            </div>
+            <button class="btn-primary full" onclick="goBookStep(2)">Continuar <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Step 2: Table selection -->
+          <div class="book-step" id="bstep2">
+            <h3>Elige tu mesa</h3>
+            <p class="hint-text" style="margin-bottom:20px">Mapa del bar — selecciona una mesa disponible</p>
+            <div class="floor-map" id="floorMap"></div>
+            <button class="btn-back" onclick="goBookStep(1)"><i class="fas fa-arrow-left"></i> Volver</button>
+          </div>
+
+          <!-- Step 3: Personal data -->
+          <div class="book-step" id="bstep3">
+            <h3>Tus datos</h3>
+            <div class="fields-col">
+              <input type="text" id="resName" placeholder="Nombre completo" class="field-input" />
+              <input type="tel" id="resPhone" placeholder="Teléfono / WhatsApp" class="field-input" />
+              <input type="email" id="resEmail" placeholder="Correo electrónico" class="field-input" />
+              <select id="resOcasion" class="field-input field-select">
+                <option value="">Ocasión especial (opcional)</option>
+                <option>Cumpleaños 🎂</option>
+                <option>Aniversario 💕</option>
+                <option>Despedida de soltero/a 🎉</option>
+                <option>Reunión de amigos 🥂</option>
+                <option>Cita romántica 🌹</option>
+                <option>Celebración corporativa 💼</option>
+              </select>
+              <textarea id="resNote" placeholder="Nota adicional (opcional)" class="field-input" rows="3"></textarea>
+            </div>
+            <div class="btn-row">
+              <button class="btn-back" onclick="goBookStep(2)"><i class="fas fa-arrow-left"></i> Volver</button>
+              <button class="btn-primary" onclick="confirmReservation()"><i class="fas fa-check"></i> Confirmar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="booking-right">
+          <div class="res-summary">
+            <div class="res-sum-header">
+              <i class="fas fa-receipt"></i> Resumen
+            </div>
+            <div class="sum-row"><span>Fecha:</span><strong id="sumDate">—</strong></div>
+            <div class="sum-row"><span>Hora:</span><strong id="sumTime">—</strong></div>
+            <div class="sum-row"><span>Personas:</span><strong id="sumPax">2</strong></div>
+            <div class="sum-row"><span>Mesa:</span><strong id="sumTable">—</strong></div>
+            <div class="sum-row"><span>Ocasión:</span><strong id="sumOcasion">—</strong></div>
+            <div class="res-sum-note">
+              <i class="fas fa-info-circle"></i>
+              Recibirás confirmación por WhatsApp en menos de 30 min.
+            </div>
+          </div>
+          <div class="contact-quick">
+            <p>¿Prefieres reservar por WhatsApp?</p>
+            <a href="https://wa.me/573001234567" target="_blank" class="btn-wa">
+              <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIRMATION MODAL -->
+  <div class="modal-bg" id="confirmModal">
+    <div class="modal-box">
+      <div class="modal-glow"></div>
+      <div class="modal-icon">🍹</div>
+      <h3>¡Reserva Confirmada!</h3>
+      <p id="modalBody"></p>
+      <button class="btn-primary" onclick="closeModal()">¡A celebrar!</button>
+    </div>
+  </div>
+
+  <!-- NOSOTROS -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="section-header">
+        <span class="sec-tag">Quiénes Somos</span>
+        <h2>LOS <span class="magenta">CREADORES</span></h2>
+        <p>Dos caleños con el mismo sueño: crear el bar más auténtico de la ciudad.</p>
+      </div>
+      <div class="creators-grid">
+        <div class="creator-card">
+          <div class="creator-avatar av1">JJ</div>
+          <div class="creator-body">
+            <h3>Jhon Jairo Parra</h3>
+            <span class="creator-role">Co-Fundador & Master Mixólogo</span>
+            <p>Con más de 10 años creando experiencias líquidas, Jhon Jairo es el alquimista detrás de las recetas más icónicas de Cocteles Cali. Formado en bartending internacional, combina técnicas clásicas con sabores tropicales colombianos para crear tragos únicos.</p>
+            <div class="creator-tags">
+              <span>Mixología Clásica</span><span>Fermentados</span><span>Frutas Tropicales</span><span>Técnicas Modernas</span>
+            </div>
+            <div class="creator-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-avatar av2">SB</div>
+          <div class="creator-body">
+            <h3>Sebastián Banguera</h3>
+            <span class="creator-role">Co-Fundador & Director Creativo</span>
+            <p>Sebastián es el cerebro detrás del ambiente y la experiencia visual de Cocteles Cali. Su pasión por el diseño y la cultura urbana caleña se refleja en cada rincón del bar. Especialista en crear atmósferas que hacen que la gente quiera quedarse toda la noche.</p>
+            <div class="creator-tags">
+              <span>Diseño de Espacios</span><span>Cultura Urbana</span><span>Eventos</span><span>Branding</span>
+            </div>
+            <div class="creator-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="manifesto">
+        <div class="manifesto-inner">
+          <span class="manifesto-quote">"</span>
+          <p>En Cocteles Cali no solo vendemos tragos — vendemos momentos. Cada coctel que sale de nuestra barra lleva la energía de esta ciudad que nunca duerme.</p>
+          <span class="manifesto-authors">— Jhon Jairo & Sebastián</span>
+        </div>
+      </div>
+
+      <div class="values-row">
+        <div class="val-item"><i class="fas fa-flask cyan"></i><strong>Artesanal</strong><p>Todo hecho a mano, con ingredientes frescos y locales.</p></div>
+        <div class="val-item"><i class="fas fa-music magenta-icon"></i><strong>Ambiente</strong><p>Música en vivo los viernes y sábados desde las 9 PM.</p></div>
+        <div class="val-item"><i class="fas fa-leaf cyan"></i><strong>Local</strong><p>Apoyamos productores caleños y del Valle del Cauca.</p></div>
+        <div class="val-item"><i class="fas fa-star magenta-icon"></i><strong>Experiencia</strong><p>No es un bar más. Es una experiencia que se repite.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="section dark-sec" id="ubicacion">
+    <div class="container">
+      <div class="section-header">
+        <span class="sec-tag">Encuéntranos</span>
+        <h2>ESTAMOS EN <span class="cyan">CALI</span></h2>
+      </div>
+      <div class="loc-wrap">
+        <div class="loc-info">
+          <div class="loc-card"><i class="fas fa-map-marker-alt cyan"></i><div><strong>Dirección</strong><p>Calle 16N #6B-31, Granada,<br/>Cali, Valle del Cauca</p></div></div>
+          <div class="loc-card"><i class="fas fa-phone cyan"></i><div><strong>Teléfono</strong><p>+57 300 987 6543</p></div></div>
+          <div class="loc-card"><i class="fab fa-instagram magenta-icon"></i><div><strong>Instagram</strong><p>@coctelescali</p></div></div>
+          <div class="loc-card"><i class="fab fa-whatsapp cyan"></i><div><strong>WhatsApp</strong><p>+57 300 987 6543</p></div></div>
+          <a class="btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Calle+16N+6B-31+Cali+Colombia" target="_blank">
+            <i class="fas fa-route"></i> Cómo llegar
+          </a>
+        </div>
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127500!2d-76.5225!3d3.4516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f0cc4bb3f1%3A0x1f0fb5e952ae6168!2sCali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1680000000000"
+            width="100%" height="380" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🍹</span>
+        <span class="logo-text">COCTELES<span class="logo-accent">CALI</span></span>
+        <p>El sabor de Cali en cada sorbo.<br/>Granada, Cali — Colombia.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#nosotros">Nosotros</a>
+      </div>
+      <div class="footer-links">
+        <h4>Horarios</h4>
+        <p>Lun – Jue: 5PM – 1AM</p>
+        <p>Vie – Sáb: 5PM – 3AM</p>
+        <p>Domingo: 4PM – 12AM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Cocteles Cali. Creado con 🍹 por Jhon Jairo Parra & Sebastián Banguera.</p>
+    </div>
+  </footer>
+
+  <script src="cocteles.js"></script>
+</body>
+</html>
