@@ -1,2 +1,0 @@
-# coctel-
-PROYECTO COCTEL
